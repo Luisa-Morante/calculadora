@@ -2,9 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -15,23 +15,82 @@
 
         <TextView
             android:id="@+id/solucion"
+            style="android:attr/buttonBarStyle "
             android:layout_width="361dp"
             android:layout_height="51dp"
-            android:layout_gravity="center|right|center_horizontal"
+            android:layout_gravity="center|end|center_horizontal"
+            android:layout_marginEnd="20dp"
             android:background="@android:color/background_dark"
             android:text="0"
             android:textColor="@android:color/white"
-            android:textSize="25dp">
+            android:textSize="25dp" />
     </LinearLayout>
 
     <LinearLayout
-        android:orientation="horizontal"
-        android:layout_margin="20dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_width="match_parent">
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/clear"
+            style="android:attr/buttonBarStyle "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/background_dark"
+            android:text="CE"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/actualizar"
+            style="android:attr/buttonBarStyle "
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@android:color/background_dark"
+            android:text="AC"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/porcentaje"
+            style="android:attr/buttonBarStyle "
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@android:color/background_dark"
+            android:text="%"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/dividido"
+            style="android:attr/buttonBarStyle "
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@android:color/background_dark"
+            android:text="/"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+
 
         <Button
             android:id="@+id/num_nueve"
+            style="android:attr/buttonBarStyle "
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
@@ -43,6 +102,7 @@
 
         <Button
             android:id="@+id/num_ocho"
+            style="android:attr/buttonBarStyle "
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
@@ -54,6 +114,7 @@
 
         <Button
             android:id="@+id/num_siete"
+            style="android:attr/buttonBarStyle "
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
@@ -64,59 +125,8 @@
             android:textSize="24sp" />
 
         <Button
-            android:id="@+id/num_dividido"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="20dp"
-            android:layout_weight="1"
-            android:background="@android:color/background_dark"
-            android:text="/"
-            android:textColor="@android:color/white"
-            android:textSize="24sp" />
-
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_margin="20dp"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent">
-
-
-        <Button
-            android:id="@+id/num_seis"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="20dp"
-            android:layout_weight="1"
-            android:background="@android:color/background_dark"
-            android:text="6"
-            android:textColor="@android:color/white"
-            android:textSize="24sp" />
-
-        <Button
-            android:id="@+id/num_cinco"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="20dp"
-            android:layout_weight="1"
-            android:background="@android:color/background_dark"
-            android:text="5"
-            android:textColor="@android:color/white"
-            android:textSize="24sp" />
-
-        <Button
-            android:id="@+id/num_cuatro"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="20dp"
-            android:layout_weight="1"
-            android:background="@android:color/background_dark"
-            android:text="4"
-            android:textColor="@android:color/white"
-            android:textSize="24sp" />
-
-        <Button
-            android:id="@+id/num_multiplicacion"
+            android:id="@+id/multiplicacion"
+            style="android:attr/buttonBarStyle "
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
@@ -135,40 +145,44 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/num_tres"
+            android:id="@+id/num_seis"
+            style="android:attr/buttonBarStyle "
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
             android:layout_weight="1"
             android:background="@android:color/background_dark"
-            android:text="3"
+            android:text="6"
             android:textColor="@android:color/white"
             android:textSize="24sp" />
 
         <Button
-            android:id="@+id/num_dos"
+            android:id="@+id/num_cinco"
+            style="android:attr/buttonBarStyle "
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
             android:layout_weight="1"
             android:background="@android:color/background_dark"
-            android:text="2"
+            android:text="5"
             android:textColor="@android:color/white"
             android:textSize="24sp" />
 
         <Button
-            android:id="@+id/num_uno"
+            android:id="@+id/num_cuatro"
+            style="android:attr/buttonBarStyle "
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
             android:layout_weight="1"
             android:background="@android:color/background_dark"
-            android:text="1"
+            android:text="4"
             android:textColor="@android:color/white"
             android:textSize="24sp" />
 
         <Button
-            android:id="@+id/num_resta"
+            android:id="@+id/resta"
+            style="android:attr/buttonBarStyle "
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
@@ -187,18 +201,76 @@
 
 
         <Button
-            android:id="@+id/num_porcentaje"
+            android:id="@+id/num_tres"
+            style="android:attr/buttonBarStyle "
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
             android:layout_weight="1"
             android:background="@android:color/background_dark"
-            android:text="%"
+            android:text="3"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/num_dos"
+            style="android:attr/buttonBarStyle "
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@android:color/background_dark"
+            android:text="2"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/num_uno"
+            style="android:attr/buttonBarStyle "
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@android:color/background_dark"
+            android:text="1"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/suma"
+            style="android:attr/buttonBarStyle "
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@android:color/background_dark"
+            android:text="+"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/punto"
+            style="android:attr/buttonBarStyle "
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@android:color/background_dark"
+            android:text="."
             android:textColor="@android:color/white"
             android:textSize="24sp" />
 
         <Button
             android:id="@+id/num_cero"
+            style="android:attr/buttonBarStyle "
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
@@ -208,19 +280,10 @@
             android:textColor="@android:color/white"
             android:textSize="24sp" />
 
-        <Button
-            android:id="@+id/num_punto"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginRight="20dp"
-            android:layout_weight="1"
-            android:background="@android:color/background_dark"
-            android:text="."
-            android:textColor="@android:color/white"
-            android:textSize="24sp" />
 
         <Button
-            android:id="@+id/num_igual"
+            android:id="@+id/igual"
+            style="android:attr/buttonBarStyle "
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
