@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package com.example.calculadora ;
 
         import   android.support.v7.app.AppCompatActivity ;
@@ -183,3 +184,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 }
+=======
+package com.example.calculadora;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+}
+>>>>>>> 961501f385e11fb98f103b2f24bcf71474145bc1
