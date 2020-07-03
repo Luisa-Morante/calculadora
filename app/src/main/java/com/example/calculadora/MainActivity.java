@@ -1,5 +1,6 @@
 package com.example.calculadora ;
 
+    import android.annotation.SuppressLint;
     import   android.support.v7.app.AppCompatActivity ;
     import   android.os.Bundle ;
     import   android.view.View ;
@@ -12,7 +13,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private String numero = "";
     private float numero1 = 0;
     private float numero2 = 0;
+    private float numero3 = 0;
     private String symbol = "";
+
+
 
     private TextView solucion;
     private Button keyPadnum_nueve, keyPadnum_ocho, keyPadnum_siete, keyPadnum_seis, keyPadnum_cinco, keyPadnum_cuatro, keyPadnum_tres, keyPadnum_dos, keyPadnum_uno, keyPadnum_cero;
@@ -69,6 +73,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         keyPadpunto.setOnClickListener(this);
         keypadigual.setOnClickListener(this);
     }
+    @SuppressLint("SetTextI18n")
     @Override
     public void onClick(View v) {
         switch (v.getId()){
@@ -146,7 +151,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 numero2 = Integer.parseInt(numero);
                 switch (symbol){
                     case "%":
-                        solucion. setText("resultado" + (numero1 * numero2 / 100));
+                        solucion. setText("resultado" + (numero1 * numero2 / numero3));
                         break;
                     case "/":
                         solucion. setText("resultado" + (numero1 / numero2));
