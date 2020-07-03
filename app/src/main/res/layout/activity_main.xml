@@ -87,7 +87,6 @@
         android:layout_margin="20dp"
         android:orientation="horizontal">
 
-
         <Button
             android:id="@+id/num_nueve"
             style="android:attr/buttonBarStyle "

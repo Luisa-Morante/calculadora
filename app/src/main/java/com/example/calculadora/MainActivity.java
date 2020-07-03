@@ -1,10 +1,10 @@
 package com.example.calculadora ;
 
-import   android.support.v7.app.AppCompatActivity ;
-import   android.os.Bundle ;
-import   android.view.View ;
-import   android.widget.Button ;
-import   android.widget.TextView ;
+    import   android.support.v7.app.AppCompatActivity ;
+    import   android.os.Bundle ;
+    import   android.view.View ;
+    import   android.widget.Button ;
+    import   android.widget.TextView ;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -180,7 +180,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 numero2 = 0;
                 solucion.setText(" ");
                 break;
-
         }
     }
 }
