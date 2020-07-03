@@ -1,15 +1,14 @@
-<<<<<<< HEAD
 package com.example.calculadora ;
 
-        import   android.support.v7.app.AppCompatActivity ;
-        import   android.os.Bundle ;
-        import   android.view.View ;
-        import   android.widget.Button ;
-        import   android.widget.TextView ;
+import   android.support.v7.app.AppCompatActivity ;
+import   android.os.Bundle ;
+import   android.view.View ;
+import   android.widget.Button ;
+import   android.widget.TextView ;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-    //variables
+    //variables privadas
     private String numero = "";
     private double numero1 = 0;
     private double numero2 = 0;
@@ -162,6 +161,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         solucion. setText("resultado" + (numero1 + numero2));
                         break;
                 }
+        //limpiar
                 numero1 = 0;
                 numero2 = 0;
                 numero = "";
@@ -184,18 +184,4 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 }
-=======
-package com.example.calculadora;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-
-public class MainActivity extends AppCompatActivity {
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }
-}
->>>>>>> 961501f385e11fb98f103b2f24bcf71474145bc1
