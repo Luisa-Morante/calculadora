@@ -10,8 +10,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     //variables privadas
     private String numero = "";
-    private double numero1 = 0;
-    private double numero2 = 0;
+    private float numero1 = 0;
+    private float numero2 = 0;
     private String symbol = "";
 
     private TextView solucion;
